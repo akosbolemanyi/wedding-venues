@@ -1,0 +1,44 @@
+<div class="div-card" *ngIf="imageInput">
+    <mat-card>
+      <mat-card-header fxlayoutfxLayoutGap="20px">
+        <mat-card-title>{{imageInput.title}}</mat-card-title>
+      </mat-card-header>
+  
+      <mat-card-content>
+        <img class="galleryImage" [src]="loadedImage" />
+        <p>{{imageInput.title}}</p>
+     
+  
+      
+        <form [formGroup]="commentsForm" (ngSubmit)="addComment()">
+          <mat-form-field>
+            <mat-label for="username">Felhasználó:</mat-label>
+            <input matInput type="text" formControlName="username" placeholder="Felhasználó">
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label for="comment">Leírás:</mat-label>
+            <textarea matInput rows="10" cols="50" formControlName="comment" placeholder="Leírás"></textarea>
+          </mat-form-field>
+  
+          <button mat-raised-button color="primary" type="submit">Hozzáadás</button>
+        </form>
+    </mat-card-content>
+    
+    </mat-card>
+  
+    <h1>Megjegyzések</h1>
+  
+    <div *ngIf="comments.length">
+      <div class="card-container" *ngFor="let comment of comments; let i = index;">
+        <mat-card [ngStyle]="{'background-color' : i % 2 === 0 ? 'blanchedalmond' : 'whitesmoke'}">
+          <mat-card-content>
+            <p><strong>User:</strong> {{ comment.username }}</p>
+            <p><strong>Comment:</strong> {{ comment.comment }}</p>
+            <p><strong>Date:</strong> {{ comment.date | dateFormat }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+  

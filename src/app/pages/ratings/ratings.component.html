@@ -1,0 +1,14 @@
+<h1 class="header-title">Visszajelzések a helyszínekről</h1>
+
+<div class="card-container" *ngFor="let comment of comments; let i = index;">
+    <mat-card [ngClass]="i % 2 === 0 ? 'table-header-even' : 'table-header-odd'">
+        <mat-card-content>
+            <p><strong>Felhasználó:</strong> {{ comment.username }}</p>
+            <p><strong>Értékelés:</strong> {{ comment.comment }}</p>
+            <p><strong>Dátum:</strong> {{ comment.date | date }}</p>
+        </mat-card-content>
+        <!--<mat-card-actions align="end">
+            <button mat-raised-button>Delete</button>
+        </mat-card-actions>-->
+    </mat-card>
+</div>

@@ -1,0 +1,57 @@
+.spacer {
+  flex: 1 0;
+}
+
+#toolbar {
+  background-color: ghostwhite;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+$golden-color: goldenrod;
+
+.menu_text {
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 3px;
+  margin-right: 3px;
+
+  &:hover {
+    color: $golden-color;
+  }
+}
+
+#logo_image {
+  height: 30px;
+  margin-right: auto; // Automatically push the menu items to the right
+}
+
+#button {
+  font-size: 17px;
+  padding: 2px 4px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: goldenrod;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #cb5382;
+  }
+}
+
+.navigation-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+mat-sidenav-container {
+  height: 100%;
+}

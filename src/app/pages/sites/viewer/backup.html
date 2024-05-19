@@ -1,0 +1,18 @@
+<!-- HA a kommentszekciót elrontanám-->
+
+<div *ngIf="comments.length">
+    <table>
+        <tr>
+            <th>User</th>
+            <th>Comment</th>
+            <th>Date</th>
+        </tr>
+        1. attribútum direktíva: ngClass / ngStyle
+        <!--<tr *ngFor="let comment of comments; let i = index;" [ngClass]="i % 2 === 0 ? 'table-header-even' : 'table-header-odd'">-->
+        <tr *ngFor="let comment of comments; let i = index;" [ngStyle]="{'background-color' : i % 2 === 0 ? 'azure' : 'whitesmoke'}">
+            <td>{{comment.username}}</td>
+            <td>{{comment.comment}}</td>
+            <td>{{comment.date | dateFormat}}</td>
+        </tr>
+    </table>
+</div>

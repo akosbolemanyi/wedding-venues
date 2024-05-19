@@ -1,0 +1,15 @@
+<table class="table">
+  <tr>
+    <td class="centered">
+      <h1 class="title">Válasszon helyszíneink közül:</h1>
+    </td>
+    <td class="container">
+      <mat-form-field appearance="fill">
+        <mat-select (selectionChange)="reload()" [(ngModel)]="chosenImage">
+          <mat-option *ngFor="let obj of siteObjectInput" [value]="obj">{{obj.id}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </td>
+    
+  </tr>
+</table>

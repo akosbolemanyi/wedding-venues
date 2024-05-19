@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/*#golden_text {
+    color: goldenrod;
+    display: inline;
+    font-weight: bold;
+}*/
+
+.hero {
+    background-color: white;
+
+    &__container {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        margin: 1 auto;
+        height: 90vh;
+        z-index: 1;
+        width: 100%;
+        padding-right: 24px;
+        padding-left: 24px;
+
+
+        &__left {
+            width: 100%;
+            line-height: 1.7;
+        }
+
+        &__left h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: goldenrod;
+            margin-bottom: 1.5rem;
+            line-height: 0.8;
+        }
+
+        &__left h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: black;
+            line-height: 1.1;
+        }
+
+        &__left h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: black;
+        }
+
+        &__btn {
+            font-size: 1rem;
+            background-color: goldenrod;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+            outline: none;
+        }
+
+        &__btn a {
+            position: relative;
+            z-index: 2;
+            color: black;
+            text-decoration: none;
+        }
+
+        &__btn::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #cb5382;
+            transition: all 0.3s;
+            border-radius: 4px;
+        }
+
+        &__btn:hover:after {
+            width: 100%;
+        }
+
+        &__right {
+            text-align: center;
+        }
+        
+        &__img {
+            height: 75%;
+            width: 75%;
+        }
+        
+    }
+}

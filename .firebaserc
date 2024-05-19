@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "staging": "wedding-venues-f6f2d",
+    "default": "wedding-venues-f6f2d"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

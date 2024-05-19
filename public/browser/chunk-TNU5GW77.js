@@ -1,0 +1,1 @@
+import{a}from"./chunk-F2QIIVQK.js";import"./chunk-TQHH6YWJ.js";import"./chunk-DKELOL2R.js";import"./chunk-AHPA5K5D.js";import"./chunk-C7U3NQ45.js";import"./chunk-KLJC3WH5.js";import"./chunk-HHBLOR6C.js";import"./chunk-CQCHLVVT.js";export{a as RatingsRoutingModule};

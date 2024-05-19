@@ -1,0 +1,37 @@
+.image-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  
+    select {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      span {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+  
+      .galleryImage {
+        width: 600px; /* Fix szélesség megadása */
+        height: auto; /* Arányos magasság megőrzése */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  

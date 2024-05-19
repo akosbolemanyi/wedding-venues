@@ -1,0 +1,42 @@
+.main_component {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 224, 177);
+  width: 50%;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 50px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 60px;
+  }
+
+  mat-form-field {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  button {
+    margin-top: 10px;
+    width: 80%;
+  }
+
+  .registration-text {
+    margin-top: 20px;
+    display: block;
+  }
+
+  .registration-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .registration-text a:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/",
+    "/bookings",
+    "/login",
+    "/main",
+    "/not-found",
+    "/ratings",
+    "/registration",
+    "/sites"
+  ]
+}

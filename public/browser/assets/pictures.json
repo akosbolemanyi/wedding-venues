@@ -1,0 +1,27 @@
+[
+  {
+      "id": "arizona",
+      "title": "Arizóna - ha egzotikus esküvőt akar",
+      "description": "valami"
+  },
+  {
+      "id": "caribbean",
+      "title": "Karib-tenger - ha izgalmas esküvőt akar",
+      "description": "valami"
+  },
+  {
+      "id": "detroit",
+      "title": "Detroit - ha modern esküvőt akar",
+      "description": "valami"
+  },
+  {
+      "id": "new_york",
+      "title": "New York - ha retro esküvőt akar",
+      "description": "valami"
+  },
+  {
+      "id": "punta_gorda",
+      "title": "Punta Gorda - ha olyat akar, ami senkinek sem volt",
+      "description": "valami"
+  }
+]
